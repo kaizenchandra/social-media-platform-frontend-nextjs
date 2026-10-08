@@ -1,0 +1,125 @@
+{
+  "observations": [
+    {
+      "project": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "environment": "local Chromium production; warm server, browser cache retained between routes; no CPU/network throttling; single observation per route; not field percentiles",
+      "measurements": [
+        {
+          "route": "/overview",
+          "ttfbMs": 16.59999999962747,
+          "fcpMs": 52,
+          "lcp": 52,
+          "cls": 0,
+          "scriptCount": 14,
+          "scriptEncodedBytes": 193913,
+          "scriptTransferredBytes": 198113
+        },
+        {
+          "route": "/design-system",
+          "ttfbMs": 13.199999999254942,
+          "fcpMs": 44,
+          "lcp": 44,
+          "cls": 0,
+          "scriptCount": 18,
+          "scriptEncodedBytes": 237029,
+          "scriptTransferredBytes": 45886
+        },
+        {
+          "route": "/login",
+          "ttfbMs": 1.299999998882413,
+          "fcpMs": 16,
+          "lcp": 316,
+          "cls": 0,
+          "scriptCount": 18,
+          "scriptEncodedBytes": 218467,
+          "scriptTransferredBytes": 6466
+        }
+      ]
+    },
+    {
+      "project": "tablet",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "environment": "local Chromium production; warm server, browser cache retained between routes; no CPU/network throttling; single observation per route; not field percentiles",
+      "measurements": [
+        {
+          "route": "/overview",
+          "ttfbMs": 2.299999998882413,
+          "fcpMs": 44,
+          "lcp": 44,
+          "cls": 0,
+          "scriptCount": 13,
+          "scriptEncodedBytes": 189803,
+          "scriptTransferredBytes": 193703
+        },
+        {
+          "route": "/design-system",
+          "ttfbMs": 1.400000000372529,
+          "fcpMs": 36,
+          "lcp": 36,
+          "cls": 0,
+          "scriptCount": 17,
+          "scriptEncodedBytes": 232919,
+          "scriptTransferredBytes": 45886
+        },
+        {
+          "route": "/login",
+          "ttfbMs": 1.200000001117587,
+          "fcpMs": 12,
+          "lcp": 316,
+          "cls": 0,
+          "scriptCount": 17,
+          "scriptEncodedBytes": 214357,
+          "scriptTransferredBytes": 6466
+        }
+      ]
+    },
+    {
+      "project": "mobile",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "environment": "local Chromium production; warm server, browser cache retained between routes; no CPU/network throttling; single observation per route; not field percentiles",
+      "measurements": [
+        {
+          "route": "/overview",
+          "ttfbMs": 5.5,
+          "fcpMs": 36,
+          "lcp": 36,
+          "cls": 0,
+          "scriptCount": 13,
+          "scriptEncodedBytes": 189803,
+          "scriptTransferredBytes": 193703
+        },
+        {
+          "route": "/design-system",
+          "ttfbMs": 1.199999999254942,
+          "fcpMs": 32,
+          "lcp": 32,
+          "cls": 0,
+          "scriptCount": 17,
+          "scriptEncodedBytes": 232919,
+          "scriptTransferredBytes": 45886
+        },
+        {
+          "route": "/login",
+          "ttfbMs": 1.300000000745058,
+          "fcpMs": 12,
+          "lcp": 312,
+          "cls": 0,
+          "scriptCount": 15,
+          "scriptEncodedBytes": 212943,
+          "scriptTransferredBytes": 6022
+        }
+      ]
+    }
+  ],
+  "limits": "Single local observation per route/viewport, 500ms after heading visibility; unthrottled warm server, retained browser cache between routes, concurrent browser workers. No field percentile, slow-device result or approved performance budget."
+}

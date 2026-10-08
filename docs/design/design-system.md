@@ -1,6 +1,6 @@
 # Design system and responsive behavior
 
-**Document state:** Starter specification; no application, backend, dependencies, tests, or deployment exist in this package.
+**Document state:** Phase 02 design system and shell implemented; profile and feed component families reuse the established primitives; remaining families are planned.
 **Prepared:** 2026-10-08.
 
 ## Product direction
@@ -57,3 +57,31 @@ Use locale-aware dates, pluralization and text direction. Avoid fixed-height tex
 
 ## Design verification checklist
 Check representative feed, composer, chat, settings and report dialogs at 320, 768 and 1440px, light/dark and RTL, keyboard-only and zoomed. Inspect names, headings, focus order, contrast and touch targets; run automated accessibility checks plus manual checks. Save actual results in status when UI exists. Component library/Storybook is optional and should be introduced only when scale warrants it.
+
+## Phase 02 implementation evidence
+
+The Common identity uses the palette above, semantic control-border/on-primary/on-danger colors, system sans/mono stacks, named typography/spacing/radius/elevation/layer/motion tokens in `app/globals.css`. System fonts deliberately remove build-time font-network dependence. `components/ui` supplies typed buttons, icon buttons, native labeled inputs/textareas/selects, Radix switches/tabs/dropdowns/dialogs/sheets/toasts, alerts, skeletons, empty/error states, avatars, cards, badges and native progress. Radix handles focus trapping, Escape, focus restoration and keyboard patterns; native controls retain platform behavior.
+
+`components/shell` supplies desktop topbar/sidebar/main/optional context, tablet navigation sheet and mobile bottom navigation with safe areas. Appearance has light/dark/system choices, pre-hydration initialization, guarded local preference storage and cross-tab synchronization. Only a non-sensitive theme choice is persisted. `/design-system` demonstrates local validation, retries, pending/empty/error/loading and feedback; nothing is sent to backend services.
+
+Nine component tests and 21 Chromium tests passed, including 320/768/1440px, 200% text scaling on both routes, theme persistence and unavailable storage, reduced motion, menu/tab keys, modal focus, linked form errors, not-found navigation and axe WCAG-tagged light/dark/modal scans. Desktop/tablet/mobile and dark library screenshots were visually inspected. This is scoped evidence, not a full WCAG certification; manual assistive-technology and Firefox/WebKit checks remain open.
+
+## Phase 04 component reuse
+
+Profiles/connections reuse Cards, Avatars, native labeled form fields/Selects, Radix Tabs/Dialogs, Buttons, Badges, Alerts, skeletons and existing theme/focus/motion tokens. Responsive profile headers, detail/timeline columns and media grids collapse at content breakpoints. The mobile bottom navigation now exposes Profile, Connections and Account; the compact menu/desktop sidebar retain Overview and Component library. Private audiences have explicit copy; friendship and following are separate controls. Local SVG illustrations provide benign preview artwork without remote requests. Destructive unfriend/block dialogs explain consequences and restore focus. Page-scoped feedback preserves announcements when a request row disappears.
+
+## Phase 05 feed composition
+
+Feed cards use existing surface/border/radius/elevation tokens, author avatar/link, explicit date/audience, readable text, publication-safe artwork, permission reason and engagement actions. Media reserves a 2:1 frame and uses the existing lazy-loaded local artwork component. Text-only cards are supported. Controls wrap at narrow widths and 200% text scale; pressed reaction/save/repost states are exposed through aria-pressed. Repost denial explains the public-only rule. Feed modes are semantic navigation links with aria-current, not simulated tabs.
+
+The responsive shell now links Home/Saved/Profile in mobile navigation; all existing routes remain reachable through desktop/sidebar/mobile menus. Preference/share/report and comment edit/reply/delete dialogs reuse focus trapping, Escape and return-focus behavior. Loading skeletons reserve media space; empty views provide relevant recovery links. Error feedback survives removed cards; drafts are retained for explicit retry. Only reactions use provisional counts while confirmation is pending; reduced motion follows the existing global preference.
+
+## Phase 06 composer and safety status
+
+The composer reuses existing fields, cards, dialogs, alerts, badges and progress primitives. Text formatting exposes keyboard-operable bold/italic/list actions over a labelled textarea. A private preview renders safe text; local image/video previews reserve their aspect ratio, avoid autoplay and require image descriptions. Local preview loading and decode errors provide explicit, recoverable feedback. Audience and self-declared AI information remain distinct from verified authenticity.
+
+Status surfaces show simulation mode, intended audience, named lifecycle state, progress, explanations and bounded retry/cancel actions. Public distribution remains disabled with an associated explanation. Review targets explicitly state that overdue content stays held. Restricted/rejected status views do not display media. Appeal and victim-support entry points clearly disclose unavailable submission, no case receipt and no evidence collection. Responsive action rows wrap; options and attachment grids collapse to a single mobile column within the established safe-area shell. Browser checks cover keyboard dialog return focus, light/dark axe scans, reduced motion and 320/768/1440px with 200% text reflow.
+
+## Phase 12 advanced interfaces
+
+Creator and marketplace cards reuse existing surfaces, adaptive grids, form primitives and semantic navigation. Unavailable analytics, monetization, AI and delivery states are named rather than illustrated with fictional numbers or outputs. Repository artwork is explicitly synthetic, reserves layout space and has accessible descriptions. Confirmation dialogs show the actual prepared text/time, support Escape/back-to-edit, and restore focus to the invoking form control. Pending forms disable repeat actions while preserving text; manual retries keep an unconfirmed request identity. Well-being offers dismissible local reminders without preventing navigation or exit. Screens support narrow viewports and wrap actions; axe and keyboard/reflow checks cover high-value journeys.

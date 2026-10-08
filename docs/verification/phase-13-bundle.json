@@ -1,0 +1,352 @@
+{
+  "generatedAt": "2026-10-08T22:03:34.565Z",
+  "buildId": "yS0vafWNoY9VziwMR8qpt",
+  "method": "Client-reference assets deduplicated per route; these subtotals exclude runtime/framework assets absent from that manifest and are not total page weight. All emitted chunks counted once in total. Gzip estimates are not measured transfer or execution. No approved bundle budget exists.",
+  "total": {
+    "chunks": 82,
+    "rawBytes": 1446117,
+    "gzipBytes": 470689
+  },
+  "largestChunks": [
+    {
+      "file": "static/chunks/3794-39f53d2529971d10.js",
+      "rawBytes": 243485,
+      "gzipBytes": 67659
+    },
+    {
+      "file": "static/chunks/framework-47b723d27f4a4963.js",
+      "rawBytes": 218917,
+      "gzipBytes": 68867
+    },
+    {
+      "file": "static/chunks/4bd1b696-e199e788e58acf79.js",
+      "rawBytes": 203722,
+      "gzipBytes": 64058
+    },
+    {
+      "file": "static/chunks/main-ae9fdc8e945a4f03.js",
+      "rawBytes": 137366,
+      "gzipBytes": 40425
+    },
+    {
+      "file": "static/chunks/polyfills-42372ed130431b0a.js",
+      "rawBytes": 112594,
+      "gzipBytes": 39627
+    },
+    {
+      "file": "static/chunks/8863-45d0b8be6cbdf8b5.js",
+      "rawBytes": 94456,
+      "gzipBytes": 31796
+    },
+    {
+      "file": "static/chunks/5119-d76b2d85a9ef09bd.js",
+      "rawBytes": 93700,
+      "gzipBytes": 27306
+    },
+    {
+      "file": "static/chunks/app/groups/page-a5662a032f83c8b5.js",
+      "rawBytes": 37091,
+      "gzipBytes": 10200
+    },
+    {
+      "file": "static/chunks/2756-0dd6f3d25f311ced.js",
+      "rawBytes": 26658,
+      "gzipBytes": 8899
+    },
+    {
+      "file": "static/chunks/214-6d8980d653e6e632.js",
+      "rawBytes": 20491,
+      "gzipBytes": 7235
+    }
+  ],
+  "routes": [
+    {
+      "route": "_global-error",
+      "referencedChunks": 11,
+      "rawBytes": 272226,
+      "gzipBytes": 90874
+    },
+    {
+      "route": "_not-found",
+      "referencedChunks": 11,
+      "rawBytes": 272226,
+      "gzipBytes": 90874
+    },
+    {
+      "route": "account",
+      "referencedChunks": 12,
+      "rawBytes": 272434,
+      "gzipBytes": 91054
+    },
+    {
+      "route": "account/sessions",
+      "referencedChunks": 12,
+      "rawBytes": 272434,
+      "gzipBytes": 91054
+    },
+    {
+      "route": "assistant",
+      "referencedChunks": 13,
+      "rawBytes": 282960,
+      "gzipBytes": 95637
+    },
+    {
+      "route": "communities/[id]",
+      "referencedChunks": 11,
+      "rawBytes": 272226,
+      "gzipBytes": 90874
+    },
+    {
+      "route": "communities",
+      "referencedChunks": 12,
+      "rawBytes": 274034,
+      "gzipBytes": 91912
+    },
+    {
+      "route": "connections",
+      "referencedChunks": 12,
+      "rawBytes": 278017,
+      "gzipBytes": 93437
+    },
+    {
+      "route": "content/[id]/appeal",
+      "referencedChunks": 11,
+      "rawBytes": 272226,
+      "gzipBytes": 90874
+    },
+    {
+      "route": "content/[id]",
+      "referencedChunks": 11,
+      "rawBytes": 272226,
+      "gzipBytes": 90874
+    },
+    {
+      "route": "create",
+      "referencedChunks": 13,
+      "rawBytes": 292869,
+      "gzipBytes": 98251
+    },
+    {
+      "route": "creator",
+      "referencedChunks": 12,
+      "rawBytes": 276314,
+      "gzipBytes": 92783
+    },
+    {
+      "route": "design-system",
+      "referencedChunks": 13,
+      "rawBytes": 294520,
+      "gzipBytes": 98592
+    },
+    {
+      "route": "drafts",
+      "referencedChunks": 12,
+      "rawBytes": 272473,
+      "gzipBytes": 91061
+    },
+    {
+      "route": "forgot-password",
+      "referencedChunks": 13,
+      "rawBytes": 285598,
+      "gzipBytes": 95400
+    },
+    {
+      "route": "groups",
+      "referencedChunks": 12,
+      "rawBytes": 309317,
+      "gzipBytes": 101074
+    },
+    {
+      "route": "live",
+      "referencedChunks": 12,
+      "rawBytes": 280948,
+      "gzipBytes": 94197
+    },
+    {
+      "route": "login",
+      "referencedChunks": 13,
+      "rawBytes": 285598,
+      "gzipBytes": 95400
+    },
+    {
+      "route": "marketplace/[id]",
+      "referencedChunks": 11,
+      "rawBytes": 272226,
+      "gzipBytes": 90874
+    },
+    {
+      "route": "marketplace",
+      "referencedChunks": 12,
+      "rawBytes": 276304,
+      "gzipBytes": 92776
+    },
+    {
+      "route": "marketplace/sellers/[id]",
+      "referencedChunks": 11,
+      "rawBytes": 272226,
+      "gzipBytes": 90874
+    },
+    {
+      "route": "messages",
+      "referencedChunks": 12,
+      "rawBytes": 292449,
+      "gzipBytes": 97412
+    },
+    {
+      "route": "mfa",
+      "referencedChunks": 13,
+      "rawBytes": 285598,
+      "gzipBytes": 95399
+    },
+    {
+      "route": "moderation",
+      "referencedChunks": 12,
+      "rawBytes": 274842,
+      "gzipBytes": 92172
+    },
+    {
+      "route": "onboarding",
+      "referencedChunks": 12,
+      "rawBytes": 274447,
+      "gzipBytes": 92015
+    },
+    {
+      "route": "overview",
+      "referencedChunks": 12,
+      "rawBytes": 274853,
+      "gzipBytes": 92144
+    },
+    {
+      "route": "/",
+      "referencedChunks": 11,
+      "rawBytes": 272226,
+      "gzipBytes": 90874
+    },
+    {
+      "route": "pages",
+      "referencedChunks": 12,
+      "rawBytes": 274034,
+      "gzipBytes": 91912
+    },
+    {
+      "route": "posts/[id]",
+      "referencedChunks": 11,
+      "rawBytes": 272226,
+      "gzipBytes": 90874
+    },
+    {
+      "route": "privacy",
+      "referencedChunks": 12,
+      "rawBytes": 274029,
+      "gzipBytes": 91908
+    },
+    {
+      "route": "profile/[username]",
+      "referencedChunks": 11,
+      "rawBytes": 272226,
+      "gzipBytes": 90874
+    },
+    {
+      "route": "profile",
+      "referencedChunks": 12,
+      "rawBytes": 272714,
+      "gzipBytes": 91095
+    },
+    {
+      "route": "recovery",
+      "referencedChunks": 13,
+      "rawBytes": 285598,
+      "gzipBytes": 95400
+    },
+    {
+      "route": "reels/create",
+      "referencedChunks": 15,
+      "rawBytes": 319681,
+      "gzipBytes": 107290
+    },
+    {
+      "route": "reels",
+      "referencedChunks": 13,
+      "rawBytes": 299038,
+      "gzipBytes": 99913
+    },
+    {
+      "route": "register",
+      "referencedChunks": 13,
+      "rawBytes": 285598,
+      "gzipBytes": 95400
+    },
+    {
+      "route": "reports",
+      "referencedChunks": 12,
+      "rawBytes": 274842,
+      "gzipBytes": 92172
+    },
+    {
+      "route": "reset-password",
+      "referencedChunks": 13,
+      "rawBytes": 285598,
+      "gzipBytes": 95399
+    },
+    {
+      "route": "safety",
+      "referencedChunks": 12,
+      "rawBytes": 283403,
+      "gzipBytes": 94984
+    },
+    {
+      "route": "saved",
+      "referencedChunks": 11,
+      "rawBytes": 272226,
+      "gzipBytes": 90874
+    },
+    {
+      "route": "search",
+      "referencedChunks": 12,
+      "rawBytes": 274837,
+      "gzipBytes": 92170
+    },
+    {
+      "route": "stories/create",
+      "referencedChunks": 15,
+      "rawBytes": 319681,
+      "gzipBytes": 107291
+    },
+    {
+      "route": "stories",
+      "referencedChunks": 13,
+      "rawBytes": 299038,
+      "gzipBytes": 99914
+    },
+    {
+      "route": "verify-email",
+      "referencedChunks": 13,
+      "rawBytes": 285598,
+      "gzipBytes": 95399
+    },
+    {
+      "route": "videos/[id]",
+      "referencedChunks": 12,
+      "rawBytes": 298884,
+      "gzipBytes": 99773
+    },
+    {
+      "route": "videos/create",
+      "referencedChunks": 15,
+      "rawBytes": 319681,
+      "gzipBytes": 107290
+    },
+    {
+      "route": "videos",
+      "referencedChunks": 13,
+      "rawBytes": 299038,
+      "gzipBytes": 99913
+    },
+    {
+      "route": "wellbeing",
+      "referencedChunks": 13,
+      "rawBytes": 285287,
+      "gzipBytes": 96413
+    }
+  ]
+}

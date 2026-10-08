@@ -1,6 +1,6 @@
 # Functional requirements and traceability
 
-**Document state:** Starter specification; no application, backend, dependencies, tests, or deployment exist in this package.
+**Document state:** Preserved source specification with incremental implementation evidence; see implementation status.
 **Prepared:** 2026-10-08.
 
 ## Provenance and limits
@@ -50,10 +50,10 @@ All entries are planned scope, not completed domain specifications. D01–D55 pr
 | D06 | Social search and discovery | Baseline association pending | Not started |
 | D07 | Text, image, audio, and video publishing | Baseline association pending | Not started |
 | D08 | Likes, reactions, comments, mentions, and reposting | Baseline association pending | Not started |
-| D09 | Stories and ephemeral content | Baseline association pending | Not started |
-| D10 | Reels and short-form videos | Baseline association pending | Not started |
-| D11 | Long-form video and creator channels | Baseline association pending | Not started |
-| D12 | Live streaming | Baseline association pending | Not started |
+| D09 | Stories and ephemeral content | Baseline association pending | Partial — Phase 09 development UI; production media/live services unavailable |
+| D10 | Reels and short-form videos | Baseline association pending | Partial — Phase 09 development UI; production media/live services unavailable |
+| D11 | Long-form video and creator channels | Baseline association pending | Partial — Phase 09 development UI; production media/live services unavailable |
+| D12 | Live streaming | Baseline association pending | Partial — Phase 09 development UI; production media/live services unavailable |
 | D13 | Groups and communities | Baseline association pending | Not started |
 | D14 | Pages, businesses, and organizations | Baseline association pending | Not started |
 | D15 | Events and local social connections | Baseline association pending | Not started |
@@ -112,7 +112,7 @@ All entries are planned scope, not completed domain specifications. D01–D55 pr
 | D68 | Safety-Aware Social Recommendations | MOD-D68 | Not started |
 | D69 | Privacy-Aware AI Social Assistant | MOD-D69 | Not started |
 | D70 | User-Authorized Social Automation | MOD-D70 | Not started |
-| D71 | Social Digital Well-Being | MOD-D71 | Not started |
+| D71 | Social Digital Well-Being | MOD-D71 | Partial — Phase 12 local reminders/preferences; account-wide usage/delivery unavailable |
 | D72 | Social Commerce Trust | MOD-D72 | Not started |
 | D73 | Event-Based Collaboration | MOD-D73 | Not started |
 | D74 | Transparent Recommendation Control | MOD-D74 | Not started |
@@ -651,16 +651,16 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-POL-003 | 24-hour review target | Important product decisions | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-POL-004 | Privacy-preserving messaging | Important product decisions | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-POL-005 | Protection without indiscriminate censorship | Important product decisions | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-001 | User Registration | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-002 | Email Verification | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-001 | User Registration | User registration and authentication | RETAIN | Partial — Phase 03 development frontend; provider integration missing (passkey entry gated); see selected acceptance slice |
+| FR-002 | Email Verification | User registration and authentication | RETAIN | Partial — Phase 03 development frontend; provider integration missing (passkey entry gated); see selected acceptance slice |
 | FR-003 | Mobile Verification | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-004 | Social Sign-In | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-005 | Password Login | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-006 | Passwordless Login | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-007 | Multifactor Authentication | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-008 | Account Recovery | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-009 | Login Session Management | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-010 | Trusted Devices | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-005 | Password Login | User registration and authentication | RETAIN | Partial — Phase 03 development frontend; provider integration missing (passkey entry gated); see selected acceptance slice |
+| FR-006 | Passwordless Login | User registration and authentication | RETAIN | Partial — Phase 03 development frontend; provider integration missing (passkey entry gated); see selected acceptance slice |
+| FR-007 | Multifactor Authentication | User registration and authentication | RETAIN | Partial — Phase 03 development frontend; provider integration missing (passkey entry gated); see selected acceptance slice |
+| FR-008 | Account Recovery | User registration and authentication | RETAIN | Partial — Phase 03 development frontend; provider integration missing (passkey entry gated); see selected acceptance slice |
+| FR-009 | Login Session Management | User registration and authentication | RETAIN | Partial — Phase 03 development frontend; provider integration missing (passkey entry gated); see selected acceptance slice |
+| FR-010 | Trusted Devices | User registration and authentication | RETAIN | Partial — Phase 03 development frontend; provider integration missing (passkey entry gated); see selected acceptance slice |
 | FR-011 | Suspicious Login Detection | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-012 | Account Locking | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-013 | Age Eligibility | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -668,84 +668,84 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-015 | Teen Account Configuration | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-016 | Identity Verification | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-017 | Verified Accounts | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-018 | Account Deactivation | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-019 | Account Deletion | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-018 | Account Deactivation | User registration and authentication | RETAIN | Partial — Phase 03 development frontend; provider integration missing (passkey entry gated); see selected acceptance slice |
+| FR-019 | Account Deletion | User registration and authentication | RETAIN | Partial — Phase 03 development frontend; provider integration missing (passkey entry gated); see selected acceptance slice |
 | FR-020 | Personal Data Export | User registration and authentication | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-021 | Profile Creation | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-022 | Profile Editing | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-023 | Profile Picture | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-024 | Cover Media | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-025 | Profile Visibility | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-026 | Personal Information Controls | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-027 | Profile Sections | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-028 | Featured Content | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-029 | Profile Timeline | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-021 | Profile Creation | User profile management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-022 | Profile Editing | User profile management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-023 | Profile Picture | User profile management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-024 | Cover Media | User profile management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-025 | Profile Visibility | User profile management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-026 | Personal Information Controls | User profile management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-027 | Profile Sections | User profile management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-028 | Featured Content | User profile management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-029 | Profile Timeline | User profile management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
 | FR-030 | Profile Search | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-031 | Profile Sharing | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-032 | QR Profile Sharing | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-033 | Profile Activity History | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-034 | Profile Recommendation | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-035 | Profile Customization | User profile management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-036 | Friend Requests | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-037 | Accept Requests | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-038 | Reject Requests | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-039 | Cancel Requests | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-040 | Unfriend | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-041 | Follow Accounts | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-042 | Unfollow Accounts | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-043 | Friend Suggestions | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-044 | Mutual Connections | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-045 | Connection Lists | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-046 | Favorites | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-047 | Restricted Connections | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-048 | Block Accounts | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-049 | Mute Accounts | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-034 | Profile Recommendation | User profile management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-035 | Profile Customization | User profile management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-036 | Friend Requests | Social graph management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-037 | Accept Requests | Social graph management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-038 | Reject Requests | Social graph management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-039 | Cancel Requests | Social graph management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-040 | Unfriend | Social graph management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-041 | Follow Accounts | Social graph management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-042 | Unfollow Accounts | Social graph management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-043 | Friend Suggestions | Social graph management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-044 | Mutual Connections | Social graph management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-045 | Connection Lists | Social graph management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-046 | Favorites | Social graph management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-047 | Restricted Connections | Social graph management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-048 | Block Accounts | Social graph management | RETAIN | Partial — Phase 04 profile/graph development preview; service/media publication missing; see selected acceptance slice |
+| FR-049 | Mute Accounts | Social graph management | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
 | FR-050 | Connection Privacy | Social graph management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-051 | Personalized Feed | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-052 | Following Feed | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-053 | Friends Feed | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-054 | Chronological Feed | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-055 | Recommended Feed | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-056 | Feed Refresh | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-057 | Infinite Scrolling | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-058 | Feed Filtering | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-059 | Hide Post | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-051 | Personalized Feed | Home feed | RETAIN | Partial: Phase 05 deterministic preview modes/reasons; real personalization/ranking absent |
+| FR-052 | Following Feed | Home feed | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-053 | Friends Feed | Home feed | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-054 | Chronological Feed | Home feed | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-055 | Recommended Feed | Home feed | RETAIN | Partial: Phase 05 deterministic preview modes/reasons; real personalization/ranking absent |
+| FR-056 | Feed Refresh | Home feed | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-057 | Infinite Scrolling | Home feed | RETAIN | Partial: Phase 05 explicit cursor pagination; automatic infinite scrolling absent |
+| FR-058 | Feed Filtering | Home feed | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-059 | Hide Post | Home feed | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
 | FR-060 | Not Interested | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-061 | Save Post | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-062 | Feed Preferences | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-061 | Save Post | Home feed | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-062 | Feed Preferences | Home feed | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
 | FR-063 | Content Language | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-064 | Sensitive Content Controls | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-065 | Recommendation Explanation | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-065 | Recommendation Explanation | Home feed | RETAIN | Partial: Phase 05 deterministic preview modes/reasons; real personalization/ranking absent |
 | FR-066 | Recommendation Reset | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-067 | Feed Deduplication | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-068 | Content Freshness | Home feed | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-069 | Create Post | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-067 | Feed Deduplication | Home feed | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-068 | Content Freshness | Home feed | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-069 | Create Post | Post management | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-070 | Edit Post | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-071 | Delete Post | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-072 | Save Draft | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-072 | Save Draft | Post management | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-073 | Scheduled Publishing | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-074 | Image Attachments | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-075 | Video Attachments | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-074 | Image Attachments | Post management | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-075 | Video Attachments | Post management | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-076 | Audio Attachments | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-077 | Multiple Attachments | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-077 | Multiple Attachments | Post management | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-078 | Polls | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-079 | Text Formatting | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-079 | Text Formatting | Post management | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-080 | Hashtags | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-081 | Mentions | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-082 | Location Tags | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-083 | Audience Selection | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-084 | Post Preview | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-085 | Upload Progress | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-086 | Upload Cancellation | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-087 | Failed Upload Recovery | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-088 | Publishing Status | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-083 | Audience Selection | Post management | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-084 | Post Preview | Post management | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-085 | Upload Progress | Post management | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-086 | Upload Cancellation | Post management | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-087 | Failed Upload Recovery | Post management | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-088 | Publishing Status | Post management | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-089 | Post Edit History | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-090 | Post Accessibility | Post management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-091 | Mandatory Image Screening | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-092 | Mandatory Video Screening | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-090 | Post Accessibility | Post management | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-091 | Mandatory Image Screening | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-092 | Mandatory Video Screening | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-093 | Audio Screening | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-094 | File Format Validation | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-095 | File Size Validation | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-094 | File Format Validation | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-095 | File Size Validation | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-096 | File Integrity Checks | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-097 | Malware Detection | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-098 | Media Metadata Analysis | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -757,7 +757,7 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-104 | Video Frame Analysis | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-105 | Audio Transcription | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-106 | Media Tampering Detection | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-107 | Upload Screening Status | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-107 | Upload Screening Status | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-108 | Secure Upload Processing | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-109 | Explicit Sexual Content Detection | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-110 | Nudity Classification | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -769,7 +769,7 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-116 | Sexual Harassment Detection | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-117 | Sexualized Minor Protection | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-118 | Sexual Content Reupload Prevention | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-119 | Victim Reporting | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-119 | Victim Reporting | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-120 | Victim Privacy | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-121 | Consent Context Review | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-122 | Contextual Exceptions | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -785,76 +785,76 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-132 | AI Nudification Detection | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-133 | Identity Impersonation Detection | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-134 | Synthetic Media Disclosure | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-135 | AI Content Labeling | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-135 | AI Content Labeling | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-136 | Provenance Metadata | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-137 | Deepfake Context Warning | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-137 | Deepfake Context Warning | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-138 | Manipulation Evidence Review | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-139 | Deepfake Victim Reporting | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-139 | Deepfake Victim Reporting | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-140 | Unauthorized Deepfake Removal | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-141 | Deepfake Reupload Prevention | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-142 | Synthetic Media Appeals | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-142 | Synthetic Media Appeals | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-143 | AI Detection Uncertainty | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-144 | Risk-Based Classification | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-145 | Low-Risk Fast Path | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-146 | Medium-Risk Review | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-147 | High-Risk Hold | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-145 | Low-Risk Fast Path | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-146 | Medium-Risk Review | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-147 | High-Risk Hold | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-148 | Priority Review | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-149 | Review Time Tracking | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-150 | 24-Hour Decision Target | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-151 | Review Deadline Escalation | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-152 | No Automatic Unsafe Publication | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-149 | Review Time Tracking | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-150 | 24-Hour Decision Target | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-151 | Review Deadline Escalation | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-152 | No Automatic Unsafe Publication | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-153 | User Status Notifications | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-154 | Rejection Explanation | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-155 | Appeal Submission | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-154 | Rejection Explanation | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
+| FR-155 | Appeal Submission | Mandatory pre-publication media screening | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-156 | Appeal Tracking | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-157 | Human Review Escalation | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-158 | Post-Publication Monitoring | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-159 | Retroactive Restriction | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-160 | Reconsideration After Policy Changes | Mandatory pre-publication media screening | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-161 | Post Reactions | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-162 | Reaction Removal | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-163 | Comment Creation | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-164 | Comment Editing | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-165 | Comment Deletion | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-166 | Comment Replies | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-167 | Nested Conversations | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-161 | Post Reactions | Likes, reactions, comments, and sharing | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-162 | Reaction Removal | Likes, reactions, comments, and sharing | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-163 | Comment Creation | Likes, reactions, comments, and sharing | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-164 | Comment Editing | Likes, reactions, comments, and sharing | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-165 | Comment Deletion | Likes, reactions, comments, and sharing | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-166 | Comment Replies | Likes, reactions, comments, and sharing | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-167 | Nested Conversations | Likes, reactions, comments, and sharing | RETAIN | Partial: Phase 05 one-level replies; deeper nesting absent |
 | FR-168 | Comment Reactions | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-169 | Comment Mentions | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-170 | Comment Sorting | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-171 | Comment Filtering | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-172 | Comment Moderation | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-173 | Post Sharing | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-174 | Reposting | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-173 | Post Sharing | Likes, reactions, comments, and sharing | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-174 | Reposting | Likes, reactions, comments, and sharing | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
 | FR-175 | Quote Posts | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-176 | Sharing Controls | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-177 | Engagement Counts | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-176 | Sharing Controls | Likes, reactions, comments, and sharing | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
+| FR-177 | Engagement Counts | Likes, reactions, comments, and sharing | RETAIN | Partial: Phase 05 development frontend; feed acceptance slice below; durable services absent |
 | FR-178 | Interaction Notifications | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-179 | Mention Notifications | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-180 | Conversation Subscriptions | Likes, reactions, comments, and sharing | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-181 | Story Creation | Stories | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-182 | Story Editing | Stories | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-183 | Story Scheduling | Stories | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-184 | Story Duration | Stories | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-185 | Story Audience | Stories | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-186 | Story Reactions | Stories | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-187 | Story Replies | Stories | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-188 | Story Highlights | Stories | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-189 | Story Archive | Stories | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-190 | Story Viewers | Stories | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-191 | Story Safety Screening | Stories | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-192 | Story Reporting | Stories | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-193 | Reel Creation | Reels and short-form video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-194 | Reel Editing | Reels and short-form video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-195 | Audio Selection | Reels and short-form video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-196 | Captions | Reels and short-form video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-197 | Video Effects | Reels and short-form video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-198 | Playback Controls | Reels and short-form video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-199 | Reel Recommendations | Reels and short-form video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-200 | Reel Sharing | Reels and short-form video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-201 | Reel Remixing | Reels and short-form video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-202 | Reel Analytics | Reels and short-form video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-203 | Reel Safety Screening | Reels and short-form video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-204 | Reel Reporting | Reels and short-form video | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-181 | Story Creation | Stories | RETAIN | Partial — Phase 09 story creator/private Phase 06 workflow; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-182 | Story Editing | Stories | RETAIN | Partial — Phase 09 draft text/media editing; no trim/effect editor; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-183 | Story Scheduling | Stories | RETAIN | Deferred from Phase 09 — scheduling service unavailable; not selected; retained |
+| FR-184 | Story Duration | Stories | RETAIN | Partial — Phase 09 24-hour story-fixture expiry; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-185 | Story Audience | Stories | RETAIN | Partial — Phase 09 intended draft audience and viewer audience gates; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-186 | Story Reactions | Stories | RETAIN | Partial — Phase 09 development reactions; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-187 | Story Replies | Stories | RETAIN | Deferred from Phase 09 — story replies not selected; retained |
+| FR-188 | Story Highlights | Stories | RETAIN | Partial — Phase 09 eligible creator-fixture highlights; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-189 | Story Archive | Stories | RETAIN | Deferred from Phase 09 — durable story archive not selected; retained |
+| FR-190 | Story Viewers | Stories | RETAIN | Deferred from Phase 09 — real viewer analytics service unavailable; retained |
+| FR-191 | Story Safety Screening | Stories | RETAIN | Partial — Phase 09 Phase 06 screening gate; real screening blocked; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-192 | Story Reporting | Stories | RETAIN | Deferred from Phase 09 — story reporting service unavailable; safety help retained; retained |
+| FR-193 | Reel Creation | Reels and short-form video | RETAIN | Partial — Phase 09 private reel draft; no public upload; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-194 | Reel Editing | Reels and short-form video | RETAIN | Deferred from Phase 09 — clip trimming/cropping/combining not selected; retained |
+| FR-195 | Audio Selection | Reels and short-form video | RETAIN | Deferred from Phase 09 — licensed audio selection not selected; retained |
+| FR-196 | Captions | Reels and short-form video | RETAIN | Partial — Phase 09 bundled captions/transcript; no generated subtitles; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-197 | Video Effects | Reels and short-form video | RETAIN | Deferred from Phase 09 — video effects not selected; retained |
+| FR-198 | Playback Controls | Reels and short-form video | RETAIN | Partial — Phase 09 native playback and keyboard controls; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-199 | Reel Recommendations | Reels and short-form video | RETAIN | Partial — Phase 09 deterministic fixture discovery; recommendation service unavailable; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-200 | Reel Sharing | Reels and short-form video | RETAIN | Partial — Phase 09 permission-checked preview links; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-201 | Reel Remixing | Reels and short-form video | RETAIN | Deferred from Phase 09 — remixing not selected; retained |
+| FR-202 | Reel Analytics | Reels and short-form video | RETAIN | Deferred from Phase 09 — creator analytics service unavailable; retained |
+| FR-203 | Reel Safety Screening | Reels and short-form video | RETAIN | Partial — Phase 09 Phase 06 screening gate; real screening blocked; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-204 | Reel Reporting | Reels and short-form video | RETAIN | Deferred from Phase 09 — reel reporting service unavailable; safety help retained; retained |
 | FR-205 | Private Conversations | One-to-one messaging | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-206 | Text Messages | One-to-one messaging | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-207 | End-to-End Encryption | One-to-one messaging | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -895,52 +895,52 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-242 | Cross-Device Synchronization | One-to-one messaging | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-243 | Message Expiration Visibility | One-to-one messaging | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-244 | Chat Accessibility | One-to-one messaging | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-245 | Group Chat Creation | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-246 | Group Naming | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-247 | Group Profile Image | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-248 | Member Invitation | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-249 | Invitation Links | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-250 | Invitation Approval | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-251 | Group Membership Removal | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-252 | Leave Group | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-253 | Group Admin Roles | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-254 | Group Ownership Transfer | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-255 | Group Permissions | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-256 | Group Text Messaging | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-257 | Group Media Sharing | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-258 | Group Voice Messages | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-259 | Group Message Reactions | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-260 | Group Message Replies | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-261 | Group Mentions | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-262 | Group Announcements | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-263 | Group Message Pinning | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-264 | Group Polls | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-265 | Group Events | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-266 | Group Media Gallery | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-267 | Group Search | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-268 | Group Notification Settings | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-269 | Group Moderation | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-270 | Group Reporting | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-271 | Group Encryption | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-272 | Membership Change Security | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-273 | Group Disappearing Messages | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-274 | Member Join History | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-275 | Group Size Policies | Group conversation management | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-276 | Conversation Threads | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-277 | Group Topics | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-278 | Group Tasks | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-279 | Shared Reminders | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-280 | Shared Notes | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-281 | Shared Calendars | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-282 | Group Announcements Channel | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-283 | Moderated Membership | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-284 | Temporary Groups | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-285 | Guest Participation | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-286 | Group AI Summaries | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-287 | Unread Message Summaries | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-288 | Group Decisions | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-289 | Group Safety Alerts | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-290 | Group Content Controls | Next-generation group features | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-245 | Group Chat Creation | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-246 | Group Naming | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-247 | Group Profile Image | Group conversation management | RETAIN | Deferred from Phase 08 — group image editing not selected; retained |
+| FR-248 | Member Invitation | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-249 | Invitation Links | Group conversation management | RETAIN | Deferred from Phase 08 — controlled invitation-link service unavailable; retained |
+| FR-250 | Invitation Approval | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-251 | Group Membership Removal | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-252 | Leave Group | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-253 | Group Admin Roles | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-254 | Group Ownership Transfer | Group conversation management | RETAIN | Deferred from Phase 08 — distinct ownership authority/transfer not connected; admin promotion available; retained |
+| FR-255 | Group Permissions | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-256 | Group Text Messaging | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-257 | Group Media Sharing | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-258 | Group Voice Messages | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-259 | Group Message Reactions | Group conversation management | RETAIN | Deferred from Phase 08 — group reactions not selected; retained |
+| FR-260 | Group Message Replies | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-261 | Group Mentions | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-262 | Group Announcements | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-263 | Group Message Pinning | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-264 | Group Polls | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-265 | Group Events | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-266 | Group Media Gallery | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-267 | Group Search | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-268 | Group Notification Settings | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-269 | Group Moderation | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-270 | Group Reporting | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-271 | Group Encryption | Group conversation management | RETAIN | Blocked — Phase 08: no supported group encryption/key implementation; no encryption status claimed |
+| FR-272 | Membership Change Security | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-273 | Group Disappearing Messages | Group conversation management | RETAIN | Deferred from Phase 08 — group expiry policies not selected; retained |
+| FR-274 | Member Join History | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-275 | Group Size Policies | Group conversation management | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-276 | Conversation Threads | Next-generation group features | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-277 | Group Topics | Next-generation group features | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-278 | Group Tasks | Next-generation group features | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-279 | Shared Reminders | Next-generation group features | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-280 | Shared Notes | Next-generation group features | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-281 | Shared Calendars | Next-generation group features | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-282 | Group Announcements Channel | Next-generation group features | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-283 | Moderated Membership | Next-generation group features | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-284 | Temporary Groups | Next-generation group features | RETAIN | Deferred from Phase 08 — temporary groups not selected; retained |
+| FR-285 | Guest Participation | Next-generation group features | RETAIN | Deferred from Phase 08 — guest participation not selected; retained |
+| FR-286 | Group AI Summaries | Next-generation group features | RETAIN | Deferred from Phase 08 — AI summaries not selected; retained |
+| FR-287 | Unread Message Summaries | Next-generation group features | RETAIN | Deferred from Phase 08 — AI summaries not selected; retained |
+| FR-288 | Group Decisions | Next-generation group features | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
+| FR-289 | Group Safety Alerts | Next-generation group features | RETAIN | Deferred from Phase 08 — confirmed safety-alert service unavailable; retained |
+| FR-290 | Group Content Controls | Next-generation group features | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
 | FR-291 | One-to-One Voice Calls | Calling functionality | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-292 | One-to-One Video Calls | Calling functionality | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-293 | Group Voice Calls | Calling functionality | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -961,53 +961,53 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-308 | Live Captions | Calling functionality | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-309 | Live Translation | Calling functionality | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-310 | Call Accessibility | Calling functionality | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-311 | Live Broadcast Creation | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-312 | Stream Scheduling | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-313 | Stream Audience Controls | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-314 | Live Comments | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-315 | Live Reactions | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-316 | Live Moderation | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-317 | Live Guest Invitations | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-318 | Live Notifications | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-319 | Live Content Detection | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-320 | Emergency Stream Interruption | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-321 | Stream Reporting | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-322 | Live Recording Publication | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-323 | Stream Replay | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-324 | Live Captions | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-325 | Moderator Controls | Live video | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-326 | Community Creation | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-327 | Public Communities | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-328 | Private Communities | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-329 | Community Discovery | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-330 | Community Membership | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-331 | Membership Requests | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-332 | Community Roles | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-311 | Live Broadcast Creation | Live video | RETAIN | Partial — Phase 09 unavailable-provider live studio; no broadcast; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-312 | Stream Scheduling | Live video | RETAIN | Deferred from Phase 09 — live scheduling service unavailable; retained |
+| FR-313 | Stream Audience Controls | Live video | RETAIN | Partial — Phase 09 unsent audience planning; provider authorization blocked; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-314 | Live Comments | Live video | RETAIN | Partial — Phase 09 disabled live comment interface; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-315 | Live Reactions | Live video | RETAIN | Partial — Phase 09 disabled live reaction interface; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-316 | Live Moderation | Live video | RETAIN | Partial — Phase 09 separate continuous-moderation boundary; real moderation blocked; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-317 | Live Guest Invitations | Live video | RETAIN | Deferred from Phase 09 — live guests/participant service unavailable; retained |
+| FR-318 | Live Notifications | Live video | RETAIN | Deferred from Phase 09 — live notification service unavailable; retained |
+| FR-319 | Live Content Detection | Live video | RETAIN | Partial — Phase 09 continuous-monitoring provider requirement; detection blocked; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-320 | Emergency Stream Interruption | Live video | RETAIN | Partial — Phase 09 interruption UI simulation; real intervention blocked; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-321 | Stream Reporting | Live video | RETAIN | Partial — Phase 09 disabled report interface; service unavailable; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-322 | Live Recording Publication | Live video | RETAIN | Partial — Phase 09 recording-to-private-workflow entry; no publication; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-323 | Stream Replay | Live video | RETAIN | Partial — Phase 09 replay publication guard; no live recording service; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-324 | Live Captions | Live video | RETAIN | Partial — Phase 09 disabled live captions interface; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-325 | Moderator Controls | Live video | RETAIN | Partial — Phase 09 moderator provider requirements; no real controls; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-326 | Community Creation | Public and private communities | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-327 | Public Communities | Public and private communities | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-328 | Private Communities | Public and private communities | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-329 | Community Discovery | Public and private communities | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-330 | Community Membership | Public and private communities | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-331 | Membership Requests | Public and private communities | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-332 | Community Roles | Public and private communities | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-333 | Community Rules | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-334 | Community Posts | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-335 | Community Discussions | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-336 | Community Events | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-334 | Community Posts | Public and private communities | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-335 | Community Discussions | Public and private communities | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-336 | Community Events | Public and private communities | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-337 | Community Polls | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-338 | Community Announcements | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-339 | Membership Moderation | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-340 | Community Reporting | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-338 | Community Announcements | Public and private communities | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-339 | Membership Moderation | Public and private communities | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-340 | Community Reporting | Public and private communities | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-341 | Community Suspension | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-342 | Community Analytics | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-343 | Community Recommendations | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-344 | Community Content Screening | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-345 | Community Privacy | Public and private communities | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-346 | Event Creation | Events | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-345 | Community Privacy | Public and private communities | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-346 | Event Creation | Events | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-347 | Event Editing | Events | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-348 | Event Discovery | Events | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-348 | Event Discovery | Events | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-349 | Event Invitations | Events | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-350 | RSVP | Events | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-350 | RSVP | Events | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-351 | Event Reminders | Events | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-352 | Virtual Events | Events | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-353 | Event Discussions | Events | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-354 | Event Privacy | Events | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-353 | Event Discussions | Events | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-354 | Event Privacy | Events | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-355 | Event Moderation | Events | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-356 | Page Creation | Pages and professional accounts | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-357 | Page Management | Pages and professional accounts | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-356 | Page Creation | Pages and professional accounts | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-357 | Page Management | Pages and professional accounts | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-358 | Page Roles | Pages and professional accounts | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-359 | Page Publishing | Pages and professional accounts | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-360 | Page Scheduling | Pages and professional accounts | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -1016,19 +1016,19 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-363 | Page Verification | Pages and professional accounts | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-364 | Page Moderation | Pages and professional accounts | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-365 | Page Reviews | Pages and professional accounts | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-366 | Global Search | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-367 | People Search | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-368 | Post Search | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-369 | Video Search | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-366 | Global Search | Universal search | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-367 | People Search | Universal search | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-368 | Post Search | Universal search | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-369 | Video Search | Universal search | RETAIN | Partial — Phase 10 authorized Phase 09 catalog projection in `/search`; real media/index provider unavailable |
 | FR-370 | Group Search | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-371 | Page Search | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-372 | Event Search | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-371 | Page Search | Universal search | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-372 | Event Search | Universal search | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-373 | Hashtag Search | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-374 | Search Suggestions | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-375 | Search Filters | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-374 | Search Suggestions | Universal search | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-375 | Search Filters | Universal search | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-376 | Search History | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-377 | Trending Topics | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-378 | Safe Search | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-378 | Safe Search | Universal search | RETAIN | Partial — Phase 10 synthetic development UI/state; `features/community/, lib/community/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-379 | Search Reporting | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-380 | Recommendation Feedback | Universal search | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-381 | In-App Notifications | Notification functionality | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -1041,14 +1041,14 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-388 | Security Alerts | Notification functionality | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-389 | Moderation Notifications | Notification functionality | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-390 | Appeal Notifications | Notification functionality | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-391 | Notification Preferences | Notification functionality | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-392 | Quiet Hours | Notification functionality | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-391 | Notification Preferences | Notification functionality | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
+| FR-392 | Quiet Hours | Notification functionality | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
 | FR-393 | Notification History | Notification functionality | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-394 | Notification Deep Links | Notification functionality | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-395 | Notification Grouping | Notification functionality | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-396 | Privacy Dashboard | Privacy center | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-397 | Audience Configuration | Privacy center | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-398 | Discoverability Settings | Privacy center | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-396 | Privacy Dashboard | Privacy center | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-397 | Audience Configuration | Privacy center | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-398 | Discoverability Settings | Privacy center | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-399 | Contact Permissions | Privacy center | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-400 | Tag Review | Privacy center | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-401 | Mention Permissions | Privacy center | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -1058,18 +1058,18 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-405 | Consent Management | Privacy center | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-406 | Personalized Advertising Controls | Privacy center | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-407 | Privacy Checkup | Privacy center | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-408 | User Blocking | Personal protection | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-408 | User Blocking | Personal protection | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-409 | User Restriction | Personal protection | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-410 | Harassment Reporting | Personal protection | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-410 | Harassment Reporting | Personal protection | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-411 | Bullying Reporting | Personal protection | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-412 | Impersonation Reporting | Personal protection | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-412 | Impersonation Reporting | Personal protection | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-413 | Stalking Protection | Personal protection | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-414 | Threat Reporting | Personal protection | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-415 | Hate and Discrimination Reporting | Personal protection | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-416 | Doxxing Reporting | Personal protection | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-417 | Fraud Reporting | Personal protection | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-418 | Content Blocking | Personal protection | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-419 | Safety Center | Personal protection | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-419 | Safety Center | Personal protection | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-420 | Emergency Assistance | Personal protection | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-421 | Age-Appropriate Defaults | Child and teen safety | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-422 | Unknown Adult Contact Restrictions | Child and teen safety | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -1095,22 +1095,22 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-442 | Suspicious Activity Challenges | Trust and integrity | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-443 | Reputation and Trust Signals | Trust and integrity | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-444 | Enforcement History | Trust and integrity | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-445 | Appeal Access | Trust and integrity | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-446 | AI Writing Assistance | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-447 | AI Caption Suggestions | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-445 | Appeal Access | Trust and integrity | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-446 | AI Writing Assistance | AI assistance and user experience | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
+| FR-447 | AI Caption Suggestions | AI assistance and user experience | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
 | FR-448 | AI Hashtag Suggestions | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-449 | AI Accessibility Descriptions | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-450 | AI Translation | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-449 | AI Accessibility Descriptions | AI assistance and user experience | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
+| FR-450 | AI Translation | AI assistance and user experience | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
 | FR-451 | AI Video Subtitles | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-452 | AI Content Summaries | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-452 | AI Content Summaries | AI assistance and user experience | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
 | FR-453 | AI Feed Controls | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-454 | AI Content Discovery | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-455 | AI Search Assistant | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-456 | AI Post Editing | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-457 | AI Media Enhancement | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-458 | AI Content Disclosure | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-459 | AI Assistant Privacy | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-460 | AI Output Review | AI assistance and user experience | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-459 | AI Assistant Privacy | AI assistance and user experience | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
+| FR-460 | AI Output Review | AI assistance and user experience | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
 | FR-461 | AI Safety Warnings | AI-powered safety | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-462 | AI Scam Detection | AI-powered safety | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-463 | AI Deepfake Warnings | AI-powered safety | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -1121,19 +1121,19 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-468 | Safe AI Generation | AI-powered safety | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-469 | Synthetic Identity Safeguards | AI-powered safety | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-470 | AI Feature Opt-Out | AI-powered safety | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-471 | Marketplace Listings | Social marketplace | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-471 | Marketplace Listings | Social marketplace | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
 | FR-472 | Product Media | Social marketplace | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-473 | Product Discovery | Social marketplace | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-474 | Seller Messaging | Social marketplace | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-475 | Listing Management | Social marketplace | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-476 | Listing Reporting | Social marketplace | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-473 | Product Discovery | Social marketplace | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
+| FR-474 | Seller Messaging | Social marketplace | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
+| FR-475 | Listing Management | Social marketplace | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
+| FR-476 | Listing Reporting | Social marketplace | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
 | FR-477 | Seller Verification | Social marketplace | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-478 | Seller Reputation | Social marketplace | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-479 | Marketplace Safety | Social marketplace | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-479 | Marketplace Safety | Social marketplace | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
 | FR-480 | Transaction Support | Social marketplace | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-481 | Creator Profiles | Creator monetization | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-482 | Creator Analytics | Creator monetization | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-483 | Monetization Eligibility | Creator monetization | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-481 | Creator Profiles | Creator monetization | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
+| FR-482 | Creator Analytics | Creator monetization | RETAIN | Blocked — Phase 12 unavailable data/status interface; no metrics or eligibility fabricated; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
+| FR-483 | Monetization Eligibility | Creator monetization | RETAIN | Blocked — Phase 12 unavailable data/status interface; no metrics or eligibility fabricated; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
 | FR-484 | Content Subscriptions | Creator monetization | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-485 | Tips and Support | Creator monetization | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-486 | Brand Collaborations | Creator monetization | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -1154,22 +1154,22 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-501 | Sensitive Advertising Restrictions | Advertising management | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-502 | AI-Generated Ad Disclosure | Advertising management | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-503 | Administrative Authentication | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-504 | Administrative Roles | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-504 | Administrative Roles | Administrative dashboard | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-505 | User Management | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-506 | Content Management | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-507 | Moderation Queue | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-508 | Risk-Based Prioritization | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-507 | Moderation Queue | Administrative dashboard | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-508 | Risk-Based Prioritization | Administrative dashboard | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-509 | Media Review | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-510 | Moderation Decisions | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-511 | Review Reasons | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-512 | Appeal Management | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-510 | Moderation Decisions | Administrative dashboard | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-511 | Review Reasons | Administrative dashboard | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-512 | Appeal Management | Administrative dashboard | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-513 | Escalation Management | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-514 | Moderator Safety Controls | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-515 | Restricted Evidence Access | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-516 | Administrative Audit History | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-515 | Restricted Evidence Access | Administrative dashboard | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
+| FR-516 | Administrative Audit History | Administrative dashboard | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-517 | Policy Configuration | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-518 | Enforcement Configuration | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-519 | Review Target Monitoring | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-519 | Review Target Monitoring | Administrative dashboard | RETAIN | Partial — Phase 11 synthetic development UI/state; `features/trust/, lib/trust/`, `tests/unit/community-trust.test.ts`, `tests/e2e-auth/community-trust.spec.ts`; production provider integration unavailable |
 | FR-520 | Moderation Analytics | Administrative dashboard | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-521 | Repeat Violation Tracking | Advanced trust-and-safety operations | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-522 | Harmful Media Fingerprints | Advanced trust-and-safety operations | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -1186,18 +1186,18 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-533 | User Notice Management | Advanced trust-and-safety operations | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-534 | Auditability | Advanced trust-and-safety operations | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-535 | Reviewer Well-Being Controls | Advanced trust-and-safety operations | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-536 | Responsive Web Interface | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-536 | Responsive Web Interface | Accessibility, localization, and cross-platform experiences | RETAIN | Partial: Phase 02 shell/library only; [evidence](../implementation/status.md); other platform surfaces unimplemented |
 | FR-537 | Mobile Applications | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-538 | Progressive Web Application | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-539 | Multilingual Interface | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-540 | Right-to-Left Languages | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-541 | Screen Reader Compatibility | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-542 | Keyboard Navigation | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-543 | Accessible Captions | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-544 | Text Scaling | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-545 | Visual Accessibility | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-546 | Dark Mode | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-547 | Theme Preferences | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-541 | Screen Reader Compatibility | Accessibility, localization, and cross-platform experiences | RETAIN | Partial: Phase 02 shell/library only; [evidence](../implementation/status.md); other platform surfaces unimplemented |
+| FR-542 | Keyboard Navigation | Accessibility, localization, and cross-platform experiences | RETAIN | Partial: Phase 02 shell/library only; [evidence](../implementation/status.md); other platform surfaces unimplemented |
+| FR-543 | Accessible Captions | Accessibility, localization, and cross-platform experiences | RETAIN | Partial — Phase 09 WebVTT captions and transcript fallback; `features/media/`, `lib/media/`, `tests/unit/media-*.test.*`, `tests/e2e-auth/media.spec.ts`; production integration unavailable |
+| FR-544 | Text Scaling | Accessibility, localization, and cross-platform experiences | RETAIN | Partial: Phase 02 shell/library only; [evidence](../implementation/status.md); other platform surfaces unimplemented |
+| FR-545 | Visual Accessibility | Accessibility, localization, and cross-platform experiences | RETAIN | Partial: Phase 02 shell/library only; [evidence](../implementation/status.md); other platform surfaces unimplemented |
+| FR-546 | Dark Mode | Accessibility, localization, and cross-platform experiences | RETAIN | Partial: Phase 02 shell/library only; [evidence](../implementation/status.md); other platform surfaces unimplemented |
+| FR-547 | Theme Preferences | Accessibility, localization, and cross-platform experiences | RETAIN | Partial: Phase 02 shell/library only; [evidence](../implementation/status.md); other platform surfaces unimplemented |
 | FR-548 | Low-Data Mode | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-549 | Offline Drafts | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-550 | Interrupted Session Recovery | Accessibility, localization, and cross-platform experiences | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -1216,12 +1216,12 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-563 | Collaborative Playlists | Modern social engagement | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-564 | Interest-Based Communities | Modern social engagement | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-565 | Interest Selection | Modern social engagement | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-566 | Digital Well-Being Dashboard | Modern social engagement | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-567 | Screen-Time Reminders | Modern social engagement | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-568 | Break Reminders | Modern social engagement | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-566 | Digital Well-Being Dashboard | Modern social engagement | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
+| FR-567 | Screen-Time Reminders | Modern social engagement | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
+| FR-568 | Break Reminders | Modern social engagement | RETAIN | Partial — Phase 12 scoped synthetic UI/permissions/preferences; provider integration unavailable; `features/advanced/`, `lib/advanced/`, `tests/unit/advanced-*.test.*`, `tests/e2e-auth/advanced.spec.ts` |
 | FR-569 | Community Recognition | Modern social engagement | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-570 | Achievement Controls | Modern social engagement | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-571 | Content Provenance Display | Advanced content authenticity and misinformation protection | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-571 | Content Provenance Display | Advanced content authenticity and misinformation protection | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-572 | Manipulated Media Context | Advanced content authenticity and misinformation protection | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-573 | Fact-Check Context | Advanced content authenticity and misinformation protection | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-574 | Misleading Content Reporting | Advanced content authenticity and misinformation protection | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -1230,12 +1230,12 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-577 | Original Source Attribution | Advanced content authenticity and misinformation protection | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-578 | Coordinated Misinformation Investigation | Advanced content authenticity and misinformation protection | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-579 | Political and Civic Content Controls | Advanced content authenticity and misinformation protection | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-580 | Authenticity Appeals | Advanced content authenticity and misinformation protection | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-580 | Authenticity Appeals | Advanced content authenticity and misinformation protection | RETAIN | Partial; Phase 06 scoped simulation/UI only; see acceptance slice and backend gaps |
 | FR-581 | Consistent Access Enforcement | Cross-surface consistency and user journeys | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-582 | Content Lifecycle Consistency | Cross-surface consistency and user journeys | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-583 | Deleted Content Handling | Cross-surface consistency and user journeys | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-584 | Secure Share Preview | Cross-surface consistency and user journeys | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-585 | Reshare Enforcement | Cross-surface consistency and user journeys | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-585 | Reshare Enforcement | Cross-surface consistency and user journeys | RETAIN | Partial: Phase 05 canonical-reference audience checks; real distribution enforcement absent |
 | FR-586 | Thumbnail Moderation | Cross-surface consistency and user journeys | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-587 | Media Processing Changes | Cross-surface consistency and user journeys | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-588 | Reuse of Approved Media | Cross-surface consistency and user journeys | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -1246,8 +1246,8 @@ Each row starts RETAIN / Not started. Source grouping is exact. Phase, route, co
 | FR-593 | Reporting Transparency | Messaging safety and privacy | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-594 | Unknown Sender Media Protection | Messaging safety and privacy | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-595 | Unsolicited Intimate Image Protection | Messaging safety and privacy | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-596 | Group Invitation Protection | Messaging safety and privacy | RETAIN | Not started; phase/route/contract/code/test pending |
-| FR-597 | Post-Removal Group Security | Messaging safety and privacy | RETAIN | Not started; phase/route/contract/code/test pending |
+| FR-596 | Group Invitation Protection | Messaging safety and privacy | RETAIN | Deferred from Phase 08 — real per-account invitation protection service unavailable; retained |
+| FR-597 | Post-Removal Group Security | Messaging safety and privacy | RETAIN | Partial — Phase 08 local UI/state preview: `/groups`, `features/groups/`, `tests/unit/groups-*.test.*`, `tests/e2e-auth/groups.spec.ts`; real services unavailable |
 | FR-598 | Encryption Identity Alerts | Messaging safety and privacy | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-599 | Private AI Consent | Messaging safety and privacy | RETAIN | Not started; phase/route/contract/code/test pending |
 | FR-600 | E2EE Feature Transparency | Messaging safety and privacy | RETAIN | Not started; phase/route/contract/code/test pending |
@@ -2932,3 +2932,107 @@ For the specific objective of preventing circulation of sexual content and deepf
 | AC-13 | Encrypted private conversations are not silently decrypted for moderation.                                                                   |
 | AC-14 | Users can report harmful private messages and explicitly choose evidence to disclose.                                                        |
 | AC-15 | Safety restrictions apply consistently to copies, thumbnails, reposts, and other applicable distribution surfaces.                           |
+
+## Phase 02 selected acceptance slice
+
+Classification RETAIN: FR-536, FR-541, FR-542, FR-544–547 apply to shell/library only. FE-003 is verified on these routes; FE-001/002 have reusable local state/validation examples, and FE-010 has explicit design-preview disclosure. These are partial platform criteria, not complete business-feature coverage. Actor: any visitor. Routes: `/`, `/design-system`. No private data or permission-bearing actions. Code: `app/globals.css`, `components/ui/*`, `components/shell/*`. Evidence: `tests/unit/components.test.tsx`, `tests/e2e/shell.spec.ts`. Given a visitor at 320/768/1440px or 200% text scaling, content has no page overflow; keyboard opens/closes modal and restores focus; theme is selectable/persisted and system preference works; reduced motion disables nonessential animation. All other source IDs retain their existing status.
+
+## Phase 03 selected acceptance slice
+
+Classification RETAIN. These interfaces are development previews, not identity or security service verification. Actor: synthetic visitor/account owner. No unrelated profile/social module is implemented.
+
+| Source requirements | Frontend scope and routes | Acceptance evidence / remaining service dependency |
+|---|---|---|
+| FR-001/002/005 | `/register`, `/verify-email`, `/login` | Validate on client/server, reject invalid credentials, consume browser-bound challenges, prevent repeated submission; real registration/email/identity service absent |
+| FR-006/007 | `/login` passkey entry, `/mfa` | Unsupported passkey disabled; wrong/expired MFA cannot grant account access; provider MFA enrollment and WebAuthn ceremonies absent |
+| FR-008 | `/forgot-password`, `/reset-password`, `/recovery` | Generic forgot response, proof-bound resets, previous sessions invalidated; actual identity recovery and email delivery absent |
+| FR-009/010 | `/account/sessions` | Own devices only, revoke/trust, sign out, expiry redirects; durable provider sessions and real device signals absent |
+| FR-018/019 | `/account` dialogs | Password and exact confirmation required, no optimistic success, preview access revoked; durable deactivation/erasure policy and service absent |
+| FR-021/022 | `/onboarding`, `/account` | Name/username/bio validation and version conflict handling; photos, audience/public profile and persistent backend are outside this slice |
+| FE-001/002/004/010/011 | Auth/account routes | Pending/error/validation feedback, server access checks, unavailable production mode and transparent fixtures; platform-wide integration remains partial |
+
+Code: `features/auth/*`, `lib/auth/*`, protected App Router pages. Tests: `tests/unit/auth-adapter.test.ts`, `tests/unit/auth-form.test.tsx`, `tests/e2e-auth/account.spec.ts`, `tests/e2e/auth-production.spec.ts`. Desktop/mobile flows include network failures, credential/MFA errors, lifecycle confirmation, recovery, keyboard-relevant semantics, axe checks, 200% text reflow and non-hydrated credential safety. Production tests explicitly supply a mock flag and forged cookie and require denial. All other source IDs retain their previous disposition.
+
+## Phase 04 selected acceptance slice
+
+Classification RETAIN. Actor modes: owner, unrestricted friend, follower, unconnected guest/member, restricted friend, blocked member. Source requirements remain Partial because no backend/media publication service is integrated.
+
+| Source IDs | Requested implementation scope | Evidence / remaining coverage |
+|---|---|---|
+| FR-021–024/035 | Own/public profiles, editing, avatar/cover artwork, biography/details | `/profile`, `/profile/[username]`; closed local artwork choices; arbitrary photo/video upload and moderation remain unavailable |
+| FR-025/026/027 | Profile/detail/list audiences and semantic tabs | Server DTO minimization and owner-only editor; full contact/birthday/education policy and configurable section ordering remain unimplemented |
+| FR-028/029 | Featured content, profile timeline and media | Owner-selected published synthetic posts; audience-filtered media/featured lists; composer, actual publishing and backend pagination are outside Phase 04 |
+| FR-034/043/044 | Suggestions and mutual connections | Deterministic permitted graph signals, block/discoverability/list-audience filtering; real recommendation consent/ranking remains unavailable |
+| FR-036–042 | Send/accept/reject/cancel requests, unfriend, follow/unfollow | Sender/recipient authority, pair-version conflicts, confirmed unfriend; friendship and following remain distinct |
+| FR-045/046 | Connection lists and favorites | Own friends/followers/following/requests/favorites; custom organizational lists remain unimplemented |
+| FR-047/048 | Restrict/block controls | Directional restriction removes friends-only access; symmetric blocking removes edges and denies reads/actions; unblock never restores edges |
+| FE-001/002/003/004/010/011 | States, validation, accessibility, permissions, fixture disclosure and stale versions | Scoped profile/graph unit/component/E2E evidence; platform-wide and service guarantees remain partial |
+
+Code: `features/profiles/*`, `lib/profiles/*`, profile/connections routes and the minimal auth identity lookup. Tests: `tests/unit/profiles-adapter.test.ts`, `tests/unit/profiles-components.test.tsx`, `tests/e2e-auth/profiles.spec.ts`, production-denial checks. Acceptance: unauthorized details/content never appear in serialized profile payloads; pending fixtures never appear published; graph changes are nonoptimistic, deduplicated and version checked; failed edits preserve input; accepted/rejected requests announce completion after row removal; dialogs trap/restore focus and confirm block/unfriend; requested routes are tested at desktop/mobile with axe, both themes and enlarged text. All unselected FRs preserve their existing disposition.
+
+## Phase 05 selected acceptance slice
+
+Classification RETAIN; actor is an active, verified, onboarded synthetic account. `/`, `/saved`, `/posts/[id]` use request-time server authorization. All selected source IDs remain Partial; no real feed/social/moderation provider is connected. The foundation overview moved to `/overview`; historical Phase 02 evidence still describes its original route.
+
+| Source requirements | Implemented frontend scope | Observable acceptance / remaining dependency |
+|---|---|---|
+| FR-051–056/058/062/065/067/068 | Home/friends/following/chronological/public-discovery views, preferences, media filtering, refresh, reasons, stable order/dedup | Mode selection changes eligible posts; deterministic reasons disclose no AI; cursor pages contain no duplicates and refresh rechecks audience; ranking/freshness service absent |
+| FR-057 | Four-post opaque cursor pages, First page / Next posts | Actor/mode/expiry/preference checks reject invalid cursors; revoked posts skipped; pagination meets requested option, automatic infinite scroll remains absent |
+| FR-049/059/061 | Mute/unmute, hide/reset, save/unsave and Saved page | Hidden/muted content disappears from feeds, saved references remain separately permission-filtered; durable state absent |
+| FR-161–166/177 | Like/love/support toggle/counts, comments, one-level replies, own edit/delete | Failed reaction rolls back; pending guards and bounded replay prevent duplicate writes; stale revisions rejected; deleted text removed and permitted replies retained; actual engagement/moderation/retention services absent |
+| FR-167 | One-level conversations | Root/reply context accessible; deeper nesting is not implemented |
+| FR-173/174/176/585 | Permission-checked canonical sharing URL, public repost references and undo | Recipient permissions remain authoritative; friends/private repost denied, revoked originals and blocked attribution omitted; service-side distribution enforcement absent |
+| FE-001/002/003/004/005/009/010/011 | State feedback, validation, keyboard/reflow, publication/audience filtering, fixture disclosure and refresh/reconciliation | Selected feed routes only; unpublished fixtures never serialize, no real media storage or ranking verification; cross-client revocation/continuity remains partial |
+
+Report entry point reuses accessible dialogs with reason/details validation and a disabled real Send action. Preview draft confirmation explicitly states nothing was sent or received. It does not complete source reporting/appeal or moderation requirements; no case or safety assessment is fabricated. No post creation/upload or later business module was started.
+
+Code: `features/feed/*`, `lib/feed/*`, shared `lib/profiles` publication/person projections, feed/saved/post routes and shell links. Evidence: `tests/unit/feed-adapter.test.ts` (authority, cursor ownership/expiry, revoked permission/replay, state transitions, concurrent dedup, comment ownership/deletion/block filtering); `tests/unit/feed-components.test.tsx` (rollback/retry identity, confirmed state, validation/focus/drafts, report disclosure and clipboard fallback); `tests/e2e-auth/feed.spec.ts` (desktop/mobile feed and engagement journeys, keyboard/themes/axe/reflow/history); `tests/e2e/auth-production.spec.ts` (production denial). Exact executed results are in implementation status.
+
+## Phase 06 selected acceptance slice
+
+Classification RETAIN. All selected source IDs remain Partial: frontend simulation is implemented, actual storage/moderation/publication/report/appeal services are unavailable. Only active onboarded owners can read private drafts/status or execute commands. All 615 unique baseline IDs are retained.
+
+| Source requirements | Implemented scope | Observable acceptance / remaining dependency |
+|---|---|---|
+| FR-069/072/079/083/084/090 | Composer, owner drafts, safe bold/italic/list formatting, intended audience, private preview and image descriptions | Validation focuses errors; drafts preserve text/metadata; no raw HTML; real post creation/publication and durable drafts absent |
+| FR-074/075/077/094/095 | Local multi-image/video selection and declared extension/MIME/size/count checks | Object URLs stay local and are revoked; loading/decode failures have recoverable feedback; saved metadata requires reselection; authoritative byte/codec/malware verification and actual attachment transfer absent |
+| FR-085/086/087/088/107 | Simulated progress, cancellation/retry and typed processing/screening/review/approval/restricted/rejected states | Transfer completion advances only to PROCESSING; cancellation terminal; retry bounded; late results cannot rewind status; real transfer/events absent |
+| FR-091/092/145/146/147/149/150/151/152/154 | Mandatory hold/status interfaces, scripted low-risk-shaped approval/review/rejection, review target and explanations | Every result labelled simulated; no detector/classifier/reviewer or escalation; overdue review stays held; publish forbidden even after simulated approval; real safety/distribution authority absent |
+| FR-135/137/571 | AI self-disclosure and authenticity/deepfake context | No fabricated confidence or verified provenance; actual metadata extraction/verification absent |
+| FR-119/139/142/155/580 | Victim-support and owner-eligible appeal entry points | No intimate evidence collection, case receipt or decision override; actual report/appeal submission disabled |
+| FE-001/002/003/004/005/006/009/010/011/012 | Scoped state/validation/keyboard/reflow, owner permission, hold/deadline and truthful fixture/support boundaries | Unit/component/desktop/mobile/production-denial evidence; platform-wide real authorization, screening, reviewer escalation and victim reporting remain partial |
+
+Code: `features/publication/*`, `lib/publication/*`, `/create`, `/drafts`, `/content/[id]`, eligible `/content/[id]/appeal`, `/safety`, shell/feed links and shared styles. Tests: `tests/unit/publication-{adapter,components}.test.*`, `tests/e2e-auth/publication.spec.ts`, production denial. Assertions cover simulated low-risk progression with forbidden publication, review/rejection/restriction, timeout without automatic approval, interruption/retry/cancellation, stale/concurrent commands and stable retry IDs, owner denial, safe rich text, local bytes/URLs, restored attachment reselection, unsent appeal navigation and accessibility/reflow. Actual detection, risk classification, priority queues, appeal tracking and specialist escalation are not implemented or asserted. Exact executed verification is recorded in status.
+
+### Phase 08 traceability boundary
+
+Selected group source rows above are Partial development previews, not fulfilled production requirements. FR-272/597 cover local removal/join projections only; cryptographic membership security and actual distribution denial remain blocked. FR-270 prepares unsent report notes only; FR-279 plans reminders without notification delivery; FR-281 provides event planning/RSVPs without calendar synchronization; FR-258 previews selected audio files without microphone recording. The user-authorized Phase 08 stops before calls and later modules.
+
+### Phase 09 traceability boundary
+
+The selected rich-media rows are Partial frontend previews. Stories/reels/videos share the Phase 06 private workflow and cannot publish on scripted approval. Bundled synthetic assets are viewing fixtures, not user uploads or service moderation decisions. D11 long-form layouts, creator information, video comments/shares/saves are implemented without claiming a new baseline source ID. Live rows model unavailable controls/contracts and require eligibility, continuous monitoring, human escalation and rapid interruption because future frames cannot be prescreened. Real detection/review/distribution, viewer analytics and live reporting remain integration blockers. All deferred rows remain retained; no Phase 10 started.
+
+## Phases 10–11 acceptance slice
+
+Selected communities, events, business pages/search and privacy/report/appeal/moderation interfaces are development simulations, not operational services. The ledger marks only selected rows Partial. Community media screening, actual publication, evidence review, emergency response, delivery, analytics and unselected professional features remain blocked or not started. No source IDs were removed. See status and provider-boundary records for permission tests and limitations. Phase 11 is the final stopping point.
+
+## Phase 12 acceptance slice
+
+Creator owner content/edit/copy/status and confirmed private planning reuse Phase 06 (post/story/video formats); automatic scheduling remains Blocked pending revision-bound publication authorization. Selected marketplace discovery/owner drafts/seller/message/reporting and five consented assistance interfaces are development-only. AI generation remains unavailable and emits no fabricated outputs; manual human drafting is a separate confirmed private action. Digital well-being includes local document reminders, quiet/channel/autoplay intentions and real preview feed controls, not account-wide usage statistics or notification delivery. No financial transactions, revenue, seller scores, monetization events, analytics or AI provider results were fabricated. FR-482/483 are Blocked with truthful status UI; other selected rows are Partial. All 615 baseline IDs remain retained and unselected commerce/professional/AI features remain unchanged. Stop after Phase 12.
+
+
+## Phase 13 verification and traceability
+
+All 615 baseline requirement IDs remain retained; existing Partial/Blocked/Deferred dispositions are unchanged. This phase verifies the implemented frontend and fixes boundaries; it does not fulfill missing service requirements. The release gate is **Blocked**, with distinct passed/failed/not-executed/mocked/missing-integration sections in [Phase 13 verification](../verification/phase-13-release-verification.md).
+
+| Acceptance | Executed evidence | Remaining boundary |
+| --- | --- | --- |
+| FE-001/002 | All unit/component journeys; `release-hardening.test.tsx` adds stable request identity, concurrent deduplication, identity collisions and stale membership writes; private mutation forms fail closed before hydration | Real API error contracts and durable transactions unverified |
+| FE-003 | Existing shell/authenticated Playwright axe, keyboard/dialog and viewport/text-reflow checks rerun | Manual screen-reader, exhaustive devices/locales and non-Chromium matrix unverified |
+| FE-004/011 | Profile/feed/media/community adapter authority tests; raw guest response exclusion, removal/revocation journeys, concurrent private projection withholding | Real backend/CDN caches and cross-client permission push unverified |
+| FE-005/006/012; FR-POL-001–003 | Publication/trust hold, forbidden distribution, deadline, appeal/decision and restricted-evidence regressions rerun | Actual screening/specialist evidence/human review/report services remain mandatory blockers |
+| FE-007/008; FR-POL-004 | Messaging/group identity/order/retry/permissions and truthful unencrypted preview regressions rerun | No verified network acknowledgments, supported E2EE or private AI processing |
+| FE-009/010 | Advanced confirmation, provider-unavailable errors, preference/privacy and production-forged-session denial regressions rerun | No fabricated provider outputs, analytics or monetization; real integrations unavailable |
+| Release quality | Strict TypeScript/lint/format, build/browser checks, online dependency audit, source security review, public local timing and static bundle artifacts | Advisory/deployment/security/performance gates itemized in report; no production-readiness claim |
+
+Hardening code: `app/global-error.tsx`, `lib/security/headers.ts`, strict auth return paths, server-only community/trust stores, serialized profile/community writes and private preview forms. Reproduction: `npm run typecheck`, `npm run lint -- --max-warnings=0`, `npm run format:check`, `npm test`, serial `npm run test:e2e:auth -- --workers=1`, build then `npm run test:e2e`, `node scripts/analyze-bundle.mjs`. Run builds after authenticated browser servers exit. Stop after Phase 13.

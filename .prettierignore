@@ -1,0 +1,8 @@
+node_modules
+.next
+package-lock.json
+.idea
+AGENTS.md
+docs/product/requirements.md
+playwright-report
+test-results

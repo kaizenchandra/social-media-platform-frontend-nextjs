@@ -1,0 +1,24 @@
+import { Suspense } from "react";
+import { redirect } from "next/navigation";
+import { requireAccount } from "@/lib/auth/server";
+import { getLiveProvider } from "@/lib/media/live-provider";
+import { SessionWatch } from "@/features/auth/account-panel";
+import { LiveView } from "@/features/media/live-view";
+import { FeedLoading } from "@/features/feed/feed-loading";
+async function Content() {
+  const account = await requireAccount("/live");
+  if (!account.profile.onboarded) redirect("/onboarding");
+  return (
+    <div className="page-content rich-media-page">
+      <SessionWatch expiresAt={account.expiresAt} />
+      <LiveView capabilities={getLiveProvider().capabilities()} />
+    </div>
+  );
+}
+export default function Page() {
+  return (
+    <Suspense fallback={<FeedLoading />}>
+      <Content />
+    </Suspense>
+  );
+}
